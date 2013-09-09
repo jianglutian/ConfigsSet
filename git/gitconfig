@@ -1,0 +1,10 @@
+[user]
+	name = JiangLutian
+	email = jianglutian@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[color]
+	ui = always
