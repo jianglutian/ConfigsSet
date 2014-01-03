@@ -113,6 +113,7 @@ nmap - -
 set nowrap
 map <F3> :set invwrap<CR>
 map <F6> :TlistToggle<CR>
+map <F5> :MRU<CR>
 
 "解决菜单乱码  
   

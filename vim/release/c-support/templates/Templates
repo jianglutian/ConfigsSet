@@ -2,11 +2,11 @@
 §  User Macros
 § ==========================================================
 
-SetMacro( 'AUTHOR',      'JiangLutian' )
-SetMacro( 'AUTHORREF',   'JLT' )
+SetMacro( 'AUTHOR',      'YOUR NAME' )
+SetMacro( 'AUTHORREF',   '' )
 SetMacro( 'COMPANY',     '' )
 SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR|, |AUTHOR|' )
-SetMacro( 'EMAIL',       'jianglutian@gmail.com' )
+SetMacro( 'EMAIL',       '' )
 SetMacro( 'LICENSE',     'GNU General Public License' )
 SetMacro( 'ORGANIZATION','' )
 
