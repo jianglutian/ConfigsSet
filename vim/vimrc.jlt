@@ -21,11 +21,6 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -65,9 +60,6 @@ if has("autocmd")
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -115,13 +107,13 @@ set nowrap 		" 取消自动折行，减少长行代码对阅读的干扰
 set foldmethod=syntax 	" 默认折叠方式为根据语法折叠
 set foldlevel=99 		" 打开新文件不折叠
 
-set nu 					" 默认开启行号显示
+set nu 					" 默认开启行号显示(number)
 set nobackup 			" 不需要自动创建备份文档
 
 set tabstop=4 		" 制表符缩进为4
 set shiftwidth=4 	" 代码缩进的默认值
 
-colo ansi_blows
+colo ansi_blows 	" 这个是我喜欢的配色风格
 
 " 映射窗口大小调整的快捷键
 nmap > >
@@ -129,8 +121,13 @@ nmap < <
 nmap + +
 nmap - -
 
+map <F3> :set wrap!<CR>
 " 插件快捷键
-map <F3> :set invwrap<CR>
 map <F6> :TlistToggle<CR>
 map <F5> :MRU<CR>
+
+"filetype plugin on
+
+set cul 	    " 默认开启当前行下划线(cursorline)
+set et 			" 默认将插入的制表符自动替换为对应数量的空格(expandtab)
 
