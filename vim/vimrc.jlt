@@ -121,7 +121,9 @@ nmap < <
 nmap + +
 nmap - -
 
+" 取消自动折行
 map <F3> :set wrap!<CR>
+
 " 插件快捷键
 map <F6> :TlistToggle<CR>
 map <F5> :MRU<CR>
