@@ -1,20 +1,18 @@
 == Idioms.function == map:if, shortcut:f  ==
 // ===  FUNCTION  ======================================================================
 //         Name:  |?FUNCTION_NAME|
-//  Description:  
+//  Description:  <CURSOR>
 // =====================================================================================
-void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+void |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		// -----  end of function |FUNCTION_NAME|  ----- 
 == Idioms.function-static == map:isf, shortcut:t  ==
 // ===  FUNCTION  ======================================================================
 //         Name:  |?FUNCTION_NAME|
-//  Description:  
+//  Description:  <CURSOR>
 // =====================================================================================
-static void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+static void |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		// -----  end of static function |FUNCTION_NAME|  ----- 
@@ -23,11 +21,10 @@ static void<CURSOR>
 
 // ===  FUNCTION  ======================================================================
 //         Name:  main
-//  Description:  
+//  Description:  <CURSOR>
 // =====================================================================================
-int
-main ( int argc, char *argv[] )
-{<CURSOR>
+int main ( int argc, char *argv[] )
+{
 <SPLIT>	return EXIT_SUCCESS;
 }				// ----------  end of function main  ---------- 
 == Idioms.enum == map:ie, shortcut:e  ==
