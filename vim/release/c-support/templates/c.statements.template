@@ -1,6 +1,6 @@
 == Statements.do while == map:sd, shortcut:d  ==
 do {
-<SPLIT>} while ( <CURSOR> );				// -----  end do-while  ----- //
+<SPLIT>} while ( <CURSOR> );				/* -----  end do-while  ----- */
 == Statements.for == map:sf, shortcut:o  ==
 for ( <CURSOR>; ; )
 §
@@ -53,7 +53,7 @@ switch ( <CURSOR> ) {
 
 	default:	
 		break;
-}				// -----  end switch  ----- //
+}				/* -----  end switch  ----- */
 == Statements.case == map:sc, shortcut:c  ==
 case <CURSOR>:	
 break;

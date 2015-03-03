@@ -181,12 +181,10 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- //
 
 == C++.class using new == map:+cn, shortcut:n ==
-//
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
 //  Description:  <CURSOR>
 // =====================================================================================
-//
 class |CLASSNAME|
 {
   public:
@@ -216,12 +214,10 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- //
 
 == C++.template class == map:+tc, shortcut:t ==
-//
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
 //  Description:  <CURSOR>
 // =====================================================================================
-//
 template < class T >
 class |CLASSNAME|
 {
@@ -248,12 +244,10 @@ class |CLASSNAME|
 }; // ----------  end of template class |CLASSNAME|  ---------- //
 
 == C++.template class using new == map:+tcn, shortcut:n ==
-// 
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
 //  Description:  <CURSOR>
 // =====================================================================================
-//
 
 template < class T >
 class |CLASSNAME|
@@ -285,12 +279,10 @@ class |CLASSNAME|
 }; // -----  end of template class |CLASSNAME|  ----- //
 
 == C++.error class == map:+ec, shortcut:e ==
-//
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
 //  Description:  <CURSOR>
 // =====================================================================================
-//
 class |CLASSNAME|
 {
   public:     |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
@@ -300,58 +292,48 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- //
 
 == C++.IMPLEMENTATION.class == map:+ic , shortcut:c ==
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
 // Description:  constructor
 //--------------------------------------------------------------------------------------
-//
 |CLASSNAME|::|CLASSNAME| ()
 {<CURSOR>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- //
 
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
 // Description:  constructor
 //--------------------------------------------------------------------------------------
-//
 |CLASSNAME|::|CLASSNAME| ()
 {<CURSOR>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  |CLASSNAME|
 // Description:  copy constructor
 //--------------------------------------------------------------------------------------
-//
 |CLASSNAME|::|CLASSNAME| ( const |CLASSNAME| &other )
 {
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (copy constructor)  ----- //
 
-//
- *--------------------------------------------------------------------------------------
- *       Class:  |CLASSNAME|
- *      Method:  ~|CLASSNAME|
- * Description:  destructor
- *--------------------------------------------------------------------------------------
- //
+//--------------------------------------------------------------------------------------
+//       Class:  |CLASSNAME|
+//      Method:  ~|CLASSNAME|
+// Description:  destructor
+//--------------------------------------------------------------------------------------
 |CLASSNAME|::~|CLASSNAME| ()
 {
 }  // -----  end of method |CLASSNAME|::~|CLASSNAME|  (destructor)  ----- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  operator =
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
-//
 |CLASSNAME|&
 |CLASSNAME|::operator = ( const |CLASSNAME| &other )
 {
@@ -368,24 +350,20 @@ void<CURSOR>
 }		// -----  end of method |CLASSNAME|::|?METHODNAME|  ----- //
 
 == C++.IMPLEMENTATION.accessor == map:+ia , shortcut:a ==
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME|
 //      Method:  get_|?ATTRIBUTE|
 //--------------------------------------------------------------------------------------
-//
 inline |?RETURNTYPE|
 |CLASSNAME|::get_|ATTRIBUTE| (  ) const
 {
 	return |ATTRIBUTE|;
 }		// -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  set_|ATTRIBUTE|
 //--------------------------------------------------------------------------------------
-//
 inline void
 |CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 {
@@ -394,13 +372,11 @@ inline void
 }		// -----  end of method |CLASSNAME|::set_|ATTRIBUTE|  ----- //
 <CURSOR>
 == C++.IMPLEMENTATION.template class == map:+itc , shortcut:c ==
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
 // Description:  
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 |CLASSNAME| < T >::|CLASSNAME| ()
 {<CURSOR>
@@ -408,49 +384,41 @@ template < class T >
 
 
 == C++.IMPLEMENTATION.template class using new == map:+itcn , shortcut:n ==
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
 // Description:  constructor
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 |CLASSNAME|< T >::|CLASSNAME| ()
 {<CURSOR>
 }  // ----------  end of constructor of template class |CLASSNAME|  ---------- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  |CLASSNAME|
 // Description:  copy constructor
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 |CLASSNAME|< T >::|CLASSNAME| ( const |CLASSNAME| &other )
 {
 }  // ----------  end of copy constructor of template class |CLASSNAME|  ---------- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  ~|CLASSNAME|
 // Description:  destructor
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 |CLASSNAME|< T >::~|CLASSNAME| ()
 {
 }  // ----------  end of destructor of template class |CLASSNAME|  ---------- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  operator =
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 |CLASSNAME|< T >& |CLASSNAME|< T >::operator = ( const |CLASSNAME| &other )
 {
@@ -465,24 +433,20 @@ void<CURSOR> |?CLASSNAME|<T>::|?METHODNAME| ( <+argument_list+> )
 }		// -----  end of method |CLASSNAME|<T>::|METHODNAME|  ----- //
 
 == C++.IMPLEMENTATION.template accessor == map:+ita , shortcut:a ==
-//
- *--------------------------------------------------------------------------------------
- *       Class:  |?CLASSNAME|
- *      Method:  get_|?ATTRIBUTE|
- *--------------------------------------------------------------------------------------
- //
+//--------------------------------------------------------------------------------------
+//       Class:  |?CLASSNAME|
+//      Method:  get_|?ATTRIBUTE|
+//--------------------------------------------------------------------------------------
 template < class T >
 inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
 {
 	return |ATTRIBUTE|;
 }		// -----  end of method |CLASSNAME|<T>::get_|ATTRIBUTE|  ----- //
 
-//
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
 //      Method:  set_|ATTRIBUTE|
 //--------------------------------------------------------------------------------------
-//
 template < class T >
 inline  void |CLASSNAME|<T>::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 {

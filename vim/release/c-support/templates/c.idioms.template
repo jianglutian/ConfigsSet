@@ -1,18 +1,20 @@
 == Idioms.function == map:if, shortcut:f  ==
 // ===  FUNCTION  ======================================================================
 //         Name:  |?FUNCTION_NAME|
-//  Description:  <CURSOR>
+//  Description:  
 // =====================================================================================
-void |FUNCTION_NAME| ( <+argument_list+> )
+void<CURSOR>
+|FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		// -----  end of function |FUNCTION_NAME|  ----- //
 == Idioms.function-static == map:isf, shortcut:t  ==
 // ===  FUNCTION  ======================================================================
 //         Name:  |?FUNCTION_NAME|
-//  Description:  <CURSOR>
+//  Description:  
 // =====================================================================================
-static void |FUNCTION_NAME| ( <+argument_list+> )
+static void<CURSOR>
+|FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		// -----  end of static function |FUNCTION_NAME|  ----- //
@@ -21,10 +23,11 @@ static void |FUNCTION_NAME| ( <+argument_list+> )
 
 // ===  FUNCTION  ======================================================================
 //         Name:  main
-//  Description:  <CURSOR>
+//  Description:  
 // =====================================================================================
-int main ( int argc, char *argv[] )
-{
+int
+main ( int argc, char *argv[] )
+{<CURSOR>
 <SPLIT>	return EXIT_SUCCESS;
 }				// ----------  end of function main  ---------- //
 == Idioms.enum == map:ie, shortcut:e  ==
@@ -53,7 +56,7 @@ if ( |POINTER|==NULL ) {
 	exit (EXIT_FAILURE);
 }
 
-free (|POINTER|);
+free ( |POINTER| );
 |POINTER|	= NULL;
 
 == Idioms.malloc == map:ima, shortcut:m  ==
@@ -63,7 +66,7 @@ if ( |POINTER|==NULL ) {
 	exit (EXIT_FAILURE);
 }
 
-free (|POINTER|);
+free ( |POINTER| );
 |POINTER|	= NULL;
 
 == Idioms.realloc == map:ire, shortcut:r  ==
@@ -76,7 +79,7 @@ if ( |POINTER|==NULL ) {
 == Idioms.sizeof == map:isi, shortcut:s, insert  ==
 sizeof(<CURSOR><SPLIT>)
 == Idioms.assert == map:ias, shortcut:a, insert  ==
-assert(<CURSOR><SPLIT>);
+assert( <CURSOR><SPLIT> );
 == Idioms.open-input-file == map:ii, shortcut:i  ==
 FILE	*|?FILEPOINTER|;										// input-file pointer //
 char	*|FILEPOINTER|_file_name = "<CURSOR>";		// input-file name    //
@@ -111,7 +114,7 @@ if( fclose(|FILEPOINTER|) == EOF ) {			// close output file   //
 	exit (EXIT_FAILURE);
 }
 
-== Idioms.fprintf == map:ifsc, shortcut:f, insert  ==
+== Idioms.fprintf == map:ifpr, shortcut:f, insert  ==
 fprintf ( |?FILEPOINTER|, "<CURSOR>\n",  );
-== Idioms.fscanf == map:ifpr, shortcut:f, insert  ==
+== Idioms.fscanf == map:ifsc, shortcut:f, insert  ==
 fscanf ( |?FILEPOINTER|, "<CURSOR>", & );
