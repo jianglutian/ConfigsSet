@@ -1,4 +1,6 @@
 #!/bin/bash
+rm cscope.*
+rm TAGS
 find `pwd` ./ -name "*.cpp" >> list
 find `pwd` ./ -name "*.hpp" >> list
 find `pwd` ./ -name "*.c" >> list
