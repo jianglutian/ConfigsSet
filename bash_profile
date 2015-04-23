@@ -15,3 +15,5 @@ alias ll='ls -alh'
 alias rm='rm -f'
 LANG=zh_CN.UTF-8
 PS1="[\d|\@|\u@\H \w]\$ "
+alias vi='vim'
+export EDITOR=vim
