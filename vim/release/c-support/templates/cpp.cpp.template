@@ -343,11 +343,14 @@ class |CLASSNAME|
 }  // -----  end of method |CLASSNAME|::operator =  (assignment operator)  ----- 
 
 == C++.IMPLEMENTATION.method == map:+im , shortcut:m ==
-void<CURSOR>
-|?CLASSNAME|::|?METHODNAME| ( <+argument_list+> )
+//--------------------------------------------------------------------------------------
+//       Class:  |?CLASSNAME|
+//      Method:  |?METHODNAME|
+//--------------------------------------------------------------------------------------
+void |CLASSNAME|::|METHODNAME| ( <CURSOR><+argument_list+> )
 {
 	return ;
-}		// -----  end of method |CLASSNAME|::|?METHODNAME|  ----- 
+}		// -----  end of method |CLASSNAME|::|METHODNAME|  ----- 
 
 == C++.IMPLEMENTATION.accessor == map:+ia , shortcut:a ==
 //--------------------------------------------------------------------------------------

@@ -94,7 +94,7 @@ if has("cscope")
     nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
     nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>	
 
 
@@ -112,7 +112,7 @@ if has("cscope")
     nmap <C-@>t :scs find t <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-@>e :scs find e <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-@>f :scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-@>i :scs find i <C-R>=expand("<cfile>")<CR><CR>	
     nmap <C-@>d :scs find d <C-R>=expand("<cword>")<CR><CR>	
 
 
@@ -128,7 +128,7 @@ if has("cscope")
     nmap <C-@><C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
     nmap <C-@><C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
     nmap <C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>	
-    nmap <C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
+    nmap <C-@><C-@>i :vert scs find i <C-R>=expand("<cfile>")<CR><CR>	
     nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
