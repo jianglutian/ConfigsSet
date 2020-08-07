@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Node Platform="Linux" Series="CentOS" Version="8.2">
+    <Software Name="vim" CurrentVersion="8.0"/>
+    <Software Name="tmux" CurrentVersion="2.7"/>
+    <Software Name="git" CurrentVersion="2.18.4"/>
+    <Software Name="bash" CurrentVersion="4.4.19"/>
+</Node>
+<Node Platform="Windows" Series="Windows10" Tag="Company">
+    <Software Name="vscode" CurrentVersion="1.47.2"/>
+    <Software Name="git" CurrentVersion="2.20.1"/>
+</Node>
